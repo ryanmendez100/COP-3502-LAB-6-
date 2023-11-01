@@ -10,6 +10,14 @@ def encode(password):
     return encoded_password
 
 
+def decode(password):
+    decoded_password = ''
+    for i in password:
+        current_char = int(i) - 3
+        decoded_password = decoded_password + str(current_char)
+    return decoded_password
+
+
 
 def main():
     # print menu
